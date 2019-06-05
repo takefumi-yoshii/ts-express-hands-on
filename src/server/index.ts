@@ -46,7 +46,6 @@ app.use(
 const port = 8888
 const host = 'localhost'
 
-app.listen(port, host, (err: Express.Errback) => {
-  if (err) throw err
+app.listen(port, host, () => {
   console.log(`Running on http://${host}:${port}`)
 })
